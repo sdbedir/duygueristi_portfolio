@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <!-- Mobil uyumluluk için hayati olan viewport etiketi -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dijital Sanat Portfolyosu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigasyon -->
+    <header>
+        <div class="logo">Sanatçı Adı</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#about">Hakkında</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Açılış (Hero) Bölümü -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Merhaba, Ben [Adınız]</h1>
+            <p>Karakter Tasarımcısı ve Dijital İllüstratör</p>
+            <a href="#gallery" class="btn">Çalışmalarımı İncele</a>
+        </div>
+    </section>
+
+    <!-- Galeri Bölümü -->
+    <section id="gallery" class="portfolio-section">
+        <h2>Seçili Çalışmalarım</h2>
+        <!-- Eserleri filtreleme (Kaynakların 'stratejik gruplandırma' önerisine uygun) -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Tümü</button>
+            <button class="filter-btn" data-filter="character">Karakter Tasarımı</button>
+            <button class="filter-btn" data-filter="environment">Çevre Tasarımı</button>
+        </div>
+
+        <div class="grid">
+            <!-- Eser 1 -->
+            <div class="card character">
+                <img src="art1.jpg" alt="Karakter Tasarımı 1">
+                <div class="info">
+                    <h3>Savaşçı Konsepti</h3>
+                    <p class="desc">Photoshop. Bu projede lider illüstratör olarak karakterin gelişim sürecini yönettim.</p>
+                </div>
+            </div>
+            <!-- Eser 2 -->
+            <div class="card environment">
+                <img src="art2.jpg" alt="Çevre Tasarımı 1">
+                <div class="info">
+                    <h3>Kayıp Orman</h3>
+                    <p class="desc">Oyun projesi için 3D modelleme ve dijital boyama teknikleri kullanılarak oluşturuldu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hakkında Bölümü -->
+    <section id="about" class="about-section">
+        <h2>Hakkımda</h2>
+        <p>Ben bir dijital sanatçıyım. Hedefim, oyun stüdyoları için benzersiz dünyalar ve karakterler yaratmak. Sanatsal yolculuğumda geleneksel teknikleri modern dijital araçlarla harmanlıyorum.</p>
+    </section>
+
+    <!-- İletişim Bölümü -->
+    <section id="contact" class="contact-section">
+        <h2>İletişime Geç</h2>
+        <p>Komisyon çalışmaları veya iş teklifleri için bana ulaşabilirsiniz.</p>
+        <a href="mailto:email@adresiniz.com" class="btn">E-posta Gönder</a>
+    </section>
+
+    <footer>
+        <p>© 2026 [Adınız]. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
