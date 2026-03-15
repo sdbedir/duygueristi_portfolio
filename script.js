@@ -1,19 +1,19 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const filterBtns = document.querySelectorAll('.filter-btn');
-    const cards = document.querySelectorAll('.card');
+document.addEventListener("DOMContentLoaded", function () {
+    const filterButtons = document.querySelectorAll(".filter-btn");
+    const cards = document.querySelectorAll(".card");
 
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            btn.classList.add('active');
+    filterButtons.forEach((button) => {
+        button.addEventListener("click", function () {
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            this.classList.add("active");
 
-            const filterValue = btn.getAttribute('data-filter');
+            const filter = this.getAttribute("data-filter");
 
-            cards.forEach(card => {
-                if (filterValue === 'all' || card.classList.contains(filterValue)) {
-                    card.style.display = 'block';
+            cards.forEach((card) => {
+                if (filter === "all" || card.classList.contains(filter)) {
+                    card.classList.remove("hidden");
                 } else {
-                    card.style.display = 'none';
+                    card.classList.add("hidden");
                 }
             });
         });
